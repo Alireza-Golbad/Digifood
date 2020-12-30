@@ -1,0 +1,113 @@
+@font-face {
+    font-family: lato-light;
+    src: url(../../vendors/fonts/Lato-Light.ttf);
+}
+@font-face {
+    font-family: lato-regular;
+    src: url(../../vendors/fonts/Lato-Regular.ttf);
+}
+@font-face {
+    font-family: lato-light-italic;
+    src: url(../../vendors/fonts/Lato-LightItalic.ttf);
+}
+/* Global------------------------------------------- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: aliceblue;
+    color: rgb(161, 149, 149);
+    font-family: lato-regular, Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+    text-rendering: optimizeLegibility;
+}
+.row {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+/* header--**************************************************** */
+header {
+    background-image: linear-gradient(
+            rgba(0, 0, 0, 0.562),
+            rgba(0, 0, 0, 0.562)
+        ),
+        url(image/hero.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+.logo {
+    height: 100px;
+    width: auto;
+    float: left;
+    margin-top: 20px;
+}
+.main-nav {
+    float: right;
+    list-style-type: none;
+    text-decoration: none;
+    margin-top: 44px;
+}
+.main-nav li {
+    display: inline-block;
+    margin-left: 40px;
+}
+.main-nav li a:link,
+.main-nav li a:visited {
+    padding: 6px 0;
+    color: rgb(224, 210, 210);
+    text-decoration: none;
+    font-size: 90%;
+    border-bottom: 2px solid transparent;
+    transition: border-bottom 0.5s;
+}
+.main-nav li a:hover,
+.main-nav li a:active {
+    border-bottom: 2px solid #e45b00;
+}
+h1 {
+    margin-top: 0;
+    margin-bottom: 20px;
+    color: azure;
+    font-size: 240%;
+    font-weight: 400;
+    letter-spacing: 1px;
+    word-spacing: 3px;
+}
+.hero-text-box {
+    position: absolute;
+    max-width: 1140px;
+    top: 50%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+}
+/*  --Bottoms****************************************************** */
+.btn:link,
+.btn:visited {
+    display: inline-block;
+    padding: 10px 30px;
+    text-decoration: none;
+    border-radius: 150px;
+    transition: background-color 0.5s, border 0.5s, color 0.5s;
+}
+.btn-full:link,
+.btn-full:visited {
+    background-color: #d35400;
+    border: 1px solid #d35400;
+    color: beige;
+}
+.btn-ghost:link,
+.btn-ghost:visited {
+    border: 1px solid #d35400;
+    color: #e67e22;
+    margin-left: 25px;
+}
+.btn:hover,
+.btn:active {
+    background-color: #ff6a07;
+    border: 1px solid #ff6a07;
+    color: #b2bec3;
+}
