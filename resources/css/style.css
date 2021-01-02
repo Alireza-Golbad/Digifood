@@ -174,3 +174,33 @@ h1 {
     width: 100%;
     height: auto;
 }
+/* How it Works section *********************************** */
+.steps-box {
+    margin-top: 30px;
+}
+.steps-box:first-child {
+    text-align: right;
+    padding-right: 3%;
+}
+.steps-box:last-child {
+    padding-left: 3%;
+}
+.app-screen {
+    width: 55%;
+}
+.works-step {
+    margin-bottom: 55px;
+}
+.works-step div {
+    display: inline-block;
+    color: #d35400;
+    width: 50px;
+    height: 50px;
+    border: 2px solid #e67e22;
+    border-radius: 50%;
+    text-align: center;
+    padding: 5px;
+    float: left;
+    font-size: 166%;
+    margin-right: 26px;
+}
