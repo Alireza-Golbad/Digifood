@@ -56,6 +56,16 @@ h3 {
     font-size: 110%;
     margin-bottom: 15px;
 }
+.clearfix {
+    zoom: 1;
+}
+.clearfix:after {
+    content: ".";
+    clear: both;
+    display: block;
+    visibility: hidden;
+    height: 0;
+}
 /* header--**************************************************** */
 header {
     background-image: linear-gradient(
@@ -175,21 +185,24 @@ h1 {
     height: auto;
 }
 /* How it Works section *********************************** */
-.steps-box {
-    margin-top: 30px;
-}
+
 .steps-box:first-child {
     text-align: right;
     padding-right: 3%;
+    margin-top: 30px;
 }
 .steps-box:last-child {
     padding-left: 3%;
+    margin-top: 70px;
 }
 .app-screen {
-    width: 55%;
+    width: 50%;
 }
 .works-step {
-    margin-bottom: 55px;
+    margin-bottom: 66px;
+}
+.works-step:last-of-type {
+    margin-bottom: 99px;
 }
 .works-step div {
     display: inline-block;
@@ -203,4 +216,12 @@ h1 {
     float: left;
     font-size: 166%;
     margin-right: 26px;
+}
+.works-step p {
+    font-size: 112%;
+}
+.btn-app img {
+    height: 50px;
+    width: auto;
+    margin-right: 10px;
 }
