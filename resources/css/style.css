@@ -10,6 +10,10 @@
     font-family: lato-light-italic;
     src: url(../../vendors/fonts/Lato-LightItalic.ttf);
 }
+@font-face {
+    font-family: font1;
+    src: url(../../vendors/fonts/fa-brands-400.ttf);
+}
 /* Global------------------------------------------- */
 * {
     margin: 0;
@@ -65,6 +69,19 @@ h3 {
     display: block;
     visibility: hidden;
     height: 0;
+}
+a:link,
+a:visited {
+    text-decoration: none;
+    color: #e45b00;
+    padding-bottom: 1px;
+    border-bottom: 1px solid #e45b00;
+    transition: border-bottom 0.3s color 0.3s;
+}
+a:hover,
+a:active {
+    color: #506153;
+    border-bottom: 1px solid transparent;
 }
 /* header--**************************************************** */
 header {
@@ -224,4 +241,31 @@ h1 {
     height: 50px;
     width: auto;
     margin-right: 10px;
+}
+.btn-app:link,
+.btn-app:visited {
+    border: none;
+}
+
+/* Cities section***************************************** */
+
+.section-cities {
+    background-color: rgba(197, 238, 240, 0.959);
+    color: #b30000;
+}
+.box img {
+    width: 249px;
+    height: 166px;
+    margin-bottom: 13px;
+}
+.city-feature {
+    margin-bottom: 5px;
+    color: #4d0202;
+}
+.small-icon {
+    display: inline-block;
+    width: 30px;
+    text-align: center;
+    color: #853608;
+    margin-right: 5px;
 }
