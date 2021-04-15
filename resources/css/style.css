@@ -173,9 +173,14 @@ h1 {
     width: 70%;
     margin-left: 15%;
 }
+
+.section-features .long-copy {
+    margin-bottom: 40px;
+}
 .box p {
     font-size: 90%;
     line-height: 133%;
+    text-align: justify;
 }
 .icon-big {
     font-size: 333%;
@@ -184,7 +189,9 @@ h1 {
     margin-bottom: 10px;
 }
 /* Meals ******************************************* */
-
+.section-meals {
+    padding: 0;
+}
 .meals-showcase {
     list-style: none;
     width: 100%;
@@ -197,10 +204,19 @@ h1 {
 .meal-photo {
     width: 100%;
     margin: 0;
+    overflow: hidden;
+    background-color: black;
 }
 .meal-photo img {
+    opacity: 0.75;
     width: 100%;
     height: auto;
+    transform: scale(1.15);
+    transition: transform 0.5s, opacity 0.5s;
+}
+.meal-photo img:hover {
+    transform: scale(1.03);
+    opacity: 1;
 }
 /* How it Works section *********************************** */
 
@@ -267,8 +283,13 @@ h1 {
     display: inline-block;
     width: 30px;
     text-align: center;
-    color: #853608;
+    color: #b54a0b;
     margin-right: 5px;
+    font-size: 120%;
+    margin-right: 10px;
+    line-height: 120%;
+    vertical-align: middle;
+    margin-top: -4px;
 }
 
 /* Testimonials ************************************************ */
