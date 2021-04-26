@@ -83,6 +83,19 @@ a:active {
     color: #506153;
     border-bottom: 1px solid transparent;
 }
+
+.small-icon {
+    display: inline-block;
+    width: 30px;
+    text-align: center;
+    color: #b54a0b;
+    margin-right: 5px;
+    font-size: 120%;
+    margin-right: 10px;
+    line-height: 120%;
+    vertical-align: middle;
+    margin-top: -4px;
+}
 /* header--**************************************************** */
 header {
     background-image: linear-gradient(
@@ -279,18 +292,6 @@ h1 {
     margin-bottom: 5px;
     color: #4d0202;
 }
-.small-icon {
-    display: inline-block;
-    width: 30px;
-    text-align: center;
-    color: #b54a0b;
-    margin-right: 5px;
-    font-size: 120%;
-    margin-right: 10px;
-    line-height: 120%;
-    vertical-align: middle;
-    margin-top: -4px;
-}
 
 /* Testimonials ************************************************ */
 .testimonials {
@@ -328,4 +329,57 @@ cite img {
     border-radius: 50%;
     margin-right: 10px;
     vertical-align: middle;
+}
+
+/* Sign up ******************************************* */
+.section-plans {
+    background-color: #f4f4f4;
+}
+
+.plan-box {
+    background-color: #fff;
+    border-radius: 5px;
+    width: 90%;
+    margin-left: 5%;
+    box-shadow: 0 2px 2px rgb(240, 240, 240);
+}
+
+.plan-box div {
+    padding: 15px;
+    border-bottom: 1px solid #e8e8e8;
+}
+
+.plan-box div:first-child {
+    background-color: rgb(240, 237, 237);
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.plan-box div:last-child {
+    text-align: center;
+    border: 0;
+}
+
+.plan-price {
+    font-size: 300%;
+    margin-bottom: 10px;
+    font-weight: 200;
+    color: #e45b00;
+}
+
+.plan-price span {
+    font-size: 44%;
+    font-weight: 300;
+}
+
+.plan-price-meal {
+    font-size: 80%;
+}
+
+.plan-box ul {
+    list-style-type: none;
+}
+
+.plan-box ul li {
+    padding: 5px 0;
 }
