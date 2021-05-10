@@ -18,6 +18,7 @@
 * {
     margin: 0;
     padding: 0;
+    -webkit-box-sizing: border-box;
     box-sizing: border-box;
 }
 body {
@@ -34,6 +35,15 @@ body {
 }
 section {
     padding: 80px 0;
+}
+h1 {
+    margin-top: 0;
+    margin-bottom: 20px;
+    color: azure;
+    font-size: 240%;
+    font-weight: 400;
+    letter-spacing: 1px;
+    word-spacing: 3px;
 }
 h2 {
     font-size: 180%;
@@ -76,6 +86,7 @@ a:visited {
     color: #e45b00;
     padding-bottom: 1px;
     border-bottom: 1px solid #e45b00;
+    -webkit-transition: border-bottom 0.3s color 0.3s;
     transition: border-bottom 0.3s color 0.3s;
 }
 a:hover,
@@ -98,6 +109,14 @@ a:active {
 }
 /* header--**************************************************** */
 header {
+    background-image: -webkit-gradient(
+            linear,
+            left top,
+            left bottom,
+            from(rgba(0, 0, 0, 0.562)),
+            to(rgba(0, 0, 0, 0.562))
+        ),
+        url(image/hero.jpg);
     background-image: linear-gradient(
             rgba(0, 0, 0, 0.562),
             rgba(0, 0, 0, 0.562)
@@ -108,6 +127,15 @@ header {
     height: 100vh;
     background-attachment: fixed;
 }
+.hero-text-box {
+    position: absolute;
+    max-width: 1140px;
+    top: 50%;
+    left: 40%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+/* Main nav----******************* */
 .logo {
     height: 100px;
     width: auto;
@@ -131,27 +159,39 @@ header {
     text-decoration: none;
     font-size: 90%;
     border-bottom: 2px solid transparent;
+    -webkit-transition: border-bottom 0.5s;
     transition: border-bottom 0.5s;
 }
 .main-nav li a:hover,
 .main-nav li a:active {
     border-bottom: 2px solid #e45b00;
 }
-h1 {
-    margin-top: 0;
-    margin-bottom: 20px;
-    color: azure;
-    font-size: 240%;
-    font-weight: 400;
-    letter-spacing: 1px;
-    word-spacing: 3px;
+
+/* Sticky nav------------------------ */
+.sticky {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(68, 183, 218, 0.98);
+    z-index: 13;
 }
-.hero-text-box {
-    position: absolute;
-    max-width: 1140px;
-    top: 50%;
-    left: 40%;
-    transform: translate(-50%, -50%);
+
+.sticky .main-nav {
+    margin-top: 15px;
+}
+
+.sticky .logo {
+    height: 50px;
+    width: auto;
+    float: left;
+    margin: 3px 0;
+}
+
+.sticky .main-nav li a:link,
+.sticky .main-nav li a:visited {
+    padding: 15px 0;
+    color: rgb(59, 53, 53);
 }
 /*  --Buttons****************************************************** */
 .btn:link,
@@ -161,6 +201,7 @@ input[type="submit"] {
     padding: 10px 30px;
     text-decoration: none;
     border-radius: 150px;
+    -webkit-transition: background-color 0.5s, border 0.5s, color 0.5s;
     transition: background-color 0.5s, border 0.5s, color 0.5s;
 }
 .btn-full:link,
@@ -228,10 +269,15 @@ input[type="submit"]:active {
     opacity: 0.75;
     width: 100%;
     height: auto;
+    -webkit-transform: scale(1.15);
     transform: scale(1.15);
+    -webkit-transition: opacity 0.5s, -webkit-transform 0.5s;
+    transition: opacity 0.5s, -webkit-transform 0.5s;
     transition: transform 0.5s, opacity 0.5s;
+    transition: transform 0.5s, opacity 0.5s, -webkit-transform 0.5s;
 }
 .meal-photo img:hover {
+    -webkit-transform: scale(1.03);
     transform: scale(1.03);
     opacity: 1;
 }
@@ -299,6 +345,14 @@ input[type="submit"]:active {
 
 /* Testimonials ************************************************ */
 .testimonials {
+    background-image: -webkit-gradient(
+            linear,
+            left top,
+            left bottom,
+            from(rgba(0, 0, 0, 0.666)),
+            to(rgba(0, 0, 0, 0.666))
+        ),
+        url(image/back-customers.jpg);
     background-image: linear-gradient(
             rgba(0, 0, 0, 0.666),
             rgba(0, 0, 0, 0.666)
@@ -345,6 +399,7 @@ cite img {
     border-radius: 5px;
     width: 90%;
     margin-left: 5%;
+    -webkit-box-shadow: 0 2px 2px rgb(240, 240, 240);
     box-shadow: 0 2px 2px rgb(240, 240, 240);
 }
 
@@ -453,6 +508,7 @@ footer {
     text-decoration: none;
     border: 0;
     color: rgb(121, 112, 112);
+    -webkit-transition: color 0.3s;
     transition: color 0.3s;
 }
 
@@ -470,6 +526,7 @@ footer {
 .fa-twitter,
 .fa-google-plus-g,
 .fa-instagram {
+    -webkit-transition: color 0.3s;
     transition: color 0.3s;
 }
 
