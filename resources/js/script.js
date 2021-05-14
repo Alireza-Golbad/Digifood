@@ -28,7 +28,7 @@ $(document).ready(function () {
         );
     });
 
-    /* Nanigation Scroll *********************************************** */
+    /* Navigation Scroll *********************************************** */
     $('a[href*="#"]')
         // Remove links that don't actually link to anything
         .not('[href="#"]')
@@ -105,4 +105,20 @@ $(document).ready(function () {
             offset: "50%",
         }
     );
+
+    /* Mobile Nav ********************************************* */
+    $(".js--nav-icon").click(function () {
+        var nav = $(".js--main-nav");
+        // var icon = $(".js--nav-icon i");
+
+        // if (icon.hasClass("fas fa-bars")) {
+        //     icon.removeClass("fas fa-bars");
+        //     icon.addClass("fas fa-times");
+        // } else {
+        //     icon.removeClass("fas fa-times");
+        //     icon.addClass("fas fa-bars");
+        // }
+
+        nav.slideToggle(200);
+    });
 });
