@@ -71,4 +71,38 @@ $(document).ready(function () {
                 }
             }
         });
+
+    /* Animations on scroll ************************************ */
+    $(".js--wp-1").waypoint(
+        function (direction) {
+            $(".js--wp-1").addClass("animate__fadeIn");
+        },
+        {
+            offset: "50%",
+        }
+    );
+    $(".js--wp-2").waypoint(
+        function (direction) {
+            $(".js--wp-2").addClass("animate__fadeInUp");
+        },
+        {
+            offset: "20%",
+        }
+    );
+    $(".js--wp-3").waypoint(
+        function (direction) {
+            $(".js--wp-3").addClass("animate__fadeIn");
+        },
+        {
+            offset: "50%",
+        }
+    );
+    $(".js--wp-4").waypoint(
+        function (direction) {
+            $(".js--wp-4").addClass("animate__pulse");
+        },
+        {
+            offset: "50%",
+        }
+    );
 });
